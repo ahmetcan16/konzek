@@ -1,0 +1,28 @@
+Polygon ROI'nin temel amacı, bir görüntü üzerinde odaklanmak istediğimiz belirli bir bölgeyi seçmek ve 
+sadece bu bölgede detection, segmentation, tracking gibi analizlerleri ve uygulamaları gerçekleştirmektir.
+
+Görüntü aldığımız bölgenin sadece belli bir kısmını işaretleriz.
+Ayrıca Bu sayede algoritma, sadece belirlenen bölgede çalışarak işlem hızını artırabilir.
+
+Sadece sabit bir alan için değil belirlenen nesneler için istenen analizler yapılabilir.
+Örneğin, yüzü çerçeveleyerek sadece yüz üzerinde analiz yapabiliriz. 
+
+Ayrıca belirlenen bölgelerde ki nesneleri sayabilir, ısı haritalarını çıkarabilir, sadece belirlenen bölgede tracking gerçekleştirebiliriz.
+
+Bu konu için bir konveyör sistemde kayan nesneleri, belirlediğim sınır çizgisinden geçtikçe sayan bir pipeline oluşturdum.
+
+Klasör içerisinde bulunan dosyaların açıklamaları şu şekilde:
+
+candides.mp4 : Kaynak data videosu
+
+candides_result : Kaynak videdonun hazırladığım modelde counter ederken kaydedilmiş hali. 
+
+train_yolov8_for_Polygon_ROI.ipynb : Detect etmek istediğim nesnele için model eğittiğim notebook
+
+count_candies_with_ROI.ipynb : Eğittiğim modelin ağırlıklarını kullanarak oluşturduğum
+ve video akışından counter gerçekleştiren pipeline'nın olduğu notebook
+
+weights.zip : detect modelinin weight'leri
+
+
+İki videoda indirilip incelenebilir.

@@ -1,0 +1,11 @@
+Object tracking'da temel hedef, bir nesnenin bir video akışındaki hareketini sürekli olarak takip etmektir. 
+
+Aslında tracking'in temelini yine object detection modeli oluşturmaktadır.
+Kabaca tarif etmek gerekirse oluşturduğumuz detect modeli, bütün frameler boyunca çalışarak nesnelerin takibini gerçekleştirir.
+
+Single veya Multiple nesne takibi yapabiliriz.
+
+ROI kullanarak sadece belirli bölgelerde takip edebiliriz.
+
+Nesnelerin akış diyagramını, ısı haritasını inceleyebiliriz.
+
